@@ -1,0 +1,9 @@
+name:  Hello
+on:  push
+jobs:
+  hello:
+    runs-on:  ubuntu-latest
+    steps:
+      - run: echo "Message"
+      - run: echo "Branche ${{ github.ref_name }}"
+      - run: echo "Commit ${{ github.actor }}"
