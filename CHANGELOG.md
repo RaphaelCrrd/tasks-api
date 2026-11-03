@@ -1,6 +1,6 @@
 # Journal des changements
 
 ## Non publié
-Non
+Bof
 
 - Version initiale de l'API tasks-api.
