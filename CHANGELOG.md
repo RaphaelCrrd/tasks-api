@@ -1,6 +1,6 @@
 # Journal des changements
 
 ## Non publié
-Non
+1
 
 - Version initiale de l'API tasks-api.
