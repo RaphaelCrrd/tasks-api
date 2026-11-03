@@ -10,7 +10,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements-dev.txt
       - run: flake8
-      - run: black --check
+      - run: black --check .
 
   test:
     runs-on: ubuntu-latest
