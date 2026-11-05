@@ -15,7 +15,7 @@ créer une version (release) par un tag Git, et déployer avec une approbation a
 - [ ] `main` à jour : `git switch main && git pull`, puis `git switch -c tp3`
 - [ ] Le TP2 est terminé (CI avec `lint` et `test`)
 
-### Les commandes qui changent selon votre système
+### Les commandes qui changent selon votre système>
 
 | Action | macOS / Linux | Windows (PowerShell) |
 |---|---|---|
