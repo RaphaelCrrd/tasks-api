@@ -95,7 +95,8 @@ jobs:
 
       - name: Deploy & Smoke test (Staging)
         run: |
-          IMAGE="ghcr.io/${{ steps.repo_owner.outputs.owner }}/tasks-api:sha-${GITHUB_SHA:~0,7}"
+          SHORT_SHA=$(echo "${GITHUB_SHA}" | cut -c1-7)
+          IMAGE="ghcr.io/${{ steps.repo_owner.outputs.owner }}/tasks-api:sha-${SHORT_SHA}"
           docker run -d -p 8000:8000 --name staging-app $IMAGE
           
           for i in {1..10}; do
